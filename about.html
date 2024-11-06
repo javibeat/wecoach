@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Coach 360 - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+<body>
+    <header><div id="menu-container"></div></header>
+    
+    <main>
+        <section class="founders">
+            <h1>THE FOUNDERS</h1>
+            <div class="flipCards">
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <!-- Cara frontal de la tarjeta -->
+                        <div class="flipCardFront">
+                            <img src="assets/img/naina.jpeg" alt="Founder 1">
+                            <h2>Naina Ramnani</h2>
+                            <button class="flipButton">See More</button>
+                        </div>
+                        <!-- Cara trasera de la tarjeta -->
+                        <div class="flipCardBack">
+                            <p> Naina Ramnani (Certified ICF PCC Coach) spent a few years on the trading floor in Madrid (Spain), later moved to a corporate job in Barcelona, went on to set up a business in the UAE and is now a certified life coach. Her multicultural upbringing and varied career paths make her more open and relatable as she helps people find their purpose, redefine their goals and develop holistic leadership skills. She firmly believes true fulfillment comes from aligning our values  with our action, and it is through the power of self-awareness that we are able to grow as individuals and as professionals.</p>
+                            <button class="flipButton">Go Back</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <!-- Cara frontal de la tarjeta -->
+                        <div class="flipCardFront">
+                            <img src="assets/img/jess.jpg" alt="Founder 2">
+                            <h2>Jessica Morari</h2>
+                            <button class="flipButton">See More</button>
+                        </div>
+                        <!-- Cara trasera de la tarjeta -->
+                        <div class="flipCardBack">
+                            <p>Jessica Morari (Certified Coach) started her career in the Hospitality industry becoming a Hotel Manager when she was only 26, thanks to her natural leadership and strategic vision. Her passion and focus on developing teams and young professionals was the reason why she decided to certify as a coach. Since 2022, she has been helping people design their best life, both personally and professionally. She is on a mission to bring coaching and wellbeing into the corporate landscape, making companies the employers of choice in competitive and dynamic markets.</p>
+                            <button class="flipButton">Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <div class="mission_description">
+                <p>WeCoach360 was born out of passion: passion for making well-being accessible to everyone, passion for imparting tools and techniques for self-development on a regular basis, passion for seeing people and their organizations thrive, and above all, passion for creating awareness on well-being and making it an integral part of everyone’s lives.</p>
+                <p>This idea also stemmed from a deep understanding of the critical need for holistic employee wellbeing in today’s high-pressure work environments. Through our extensive experience in corporate settings, we noticed a significant gap in how organizations approach wellbeing; employees are expected to perform at their best without adequate resources to manage their mental, physical, financial, and emotional health. </p>
+                <p>With nearly  <a class="mental" href="https://www.kff.org/mental-health/issue-brief/a-look-at-the-latest-suicide-data-and-change-over-the-last-decade/" target="_blank">76% of employees experiencing stress that negatively impacts their productivity and overall health​</a>, it became clear to us that a long-term, integrated approach to wellbeing—covering all dimensions from mental to financial—is essential. This realization sparked the creation of WeCoach360 which is dedicated to providing corporations with structured, continuous support to cultivate healthier, happier, and more productive workforces.</p>
+                <div class="quote">
+                    <h3>“Our aim is to make happiness a lifestyle in the UAE community as well as the noble goal and supreme objective of the government.” 
+                        <div class="author">H.H. SHEIKH MOHAMMED BIN RASHID AL MAKTOUM</div>
+                    </h3>
+                </div>
+                <p>Our mission is simple: to help organizations create a thriving workplace where employees can balance high performance with holistic wellbeing. We believe that the success of a company is tied to the wellbeing of its people. </p>
+                <p>Studies show that 87% of employees feel disengaged when they lack support for their emotional and social health​, while companies with strong wellbeing programs report a 41% reduction in absenteeism and a 28% increase in productivity. Through our year-long programs, we aim to equip employees with the tools to manage stress, enhance resilience, and promote overall satisfaction in both their personal and professional lives. </p>
+                <p>By focusing on mental, physical, financial, social, professional and emotional wellbeing, we help create environments where employees and organizations can grow together sustainably. </p>
+                <p>So, if we DO DIFFERENT, we can BE BETTER.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="script.js" defer></script>
+    <script src="menu.js" defer></script>
+    <script>
+        // Cargar el footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el footer:', error));
+    </script>
+
+</body>
+</html>

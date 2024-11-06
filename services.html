@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Coach 360 - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+<body>
+    <header><div id="menu-container"></div></header>
+    
+    <main>
+
+        <section class="wellbeing">
+            <h1>OUR SERVICES</h1>
+            <div class="service_cards">
+                <a href="#wellbeing">
+                <div class="card">
+                    <h2>Corporate Wellbeing Program</h2>
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
+                </div>
+            </a>
+            <a href="#wellbeing">
+                <div class="card">
+                    <h2>Coaching Sessions</h2>
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
+                </div>
+            </a>
+            <a href="#wellbeing">
+                <div class="card">
+                    <h2>Customized Workshops</h2>
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
+                </div>
+            </a>
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="script.js" defer></script>
+    <script src="menu.js" defer></script>
+    <script>
+        // Cargar el footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el footer:', error));
+    </script>
+
+</body>
+</html>
