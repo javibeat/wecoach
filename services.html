@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Coach 360 - Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
+
 </head>
+
 <body>
-    <header><div id="menu-container"></div></header>
-    
+    <header>
+        <div id="menu-container"></div>
+    </header>
+
     <main>
 
         <section class="wellbeing">
             <h1>OUR SERVICES</h1>
             <div class="service_cards">
                 <a href="#wellbeing">
-                <div class="card">
-                    <h2>Corporate Wellbeing Program</h2>
-                    <div class="image-container">
-                    <img src="assets/img/service1.png" alt="Corporate Wellbeing Program">
-                </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
-                </div>
-            </a>
-            <a href="#wellbeing">
-                <div class="card">
-                    <h2>Coaching Sessions</h2>
-                    <div class="image-container">
-                    <img src="assets/img/service2.png" alt="Coaching Sessions">
-                </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
-                </div>
-            </a>
-            <a href="#wellbeing">
-                <div class="card">
-                    <h2>Customized Workshops</h2>
-                    <div class="image-container">
-                    <img src="assets/img/service3.png" alt="Customized Workshops">
-                </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
-                </div>
-            </a>
+                    <div class="card">
+                        <h2>Corporate Wellbeing Program</h2>
+                        <div class="image-container">
+                            <img src="assets/img/service1.png" alt="Corporate Wellbeing Program">
+                        </div>
+                        <p>Thrive360 is a year long program specifically designed to enhance employee wellbeing in the workplace while at the same time enhancing your company branding; a people-centered working environment will position your organization as a pioneer in the industry as well as an employer of choice.</p>
+                    </div>
+                </a>
+                <a href="#wellbeing">
+                    <div class="card">
+                        <h2>Coaching Sessions</h2>
+                        <div class="image-container">
+                            <img src="assets/img/service2.png" alt="Coaching Sessions">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam
+                            asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus
+                            voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
+                    </div>
+                </a>
+                <a href="#wellbeing">
+                    <div class="card">
+                        <h2>Customized Workshops</h2>
+                        <div class="image-container">
+                            <img src="assets/img/service3.png" alt="Customized Workshops">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo rem pariatur, ullam
+                            asperiores voluptate, quod sunt repellendus, odit et adipisci quam quas necessitatibus
+                            voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
+                    </div>
+                </a>
             </div>
         </section>
-        
+
+        <section id="wellbeing">
+            <h2>Corporate Wellbeing Program</h2>
+            <p>Thrive360 is a year long program specifically designed to enhance employee wellbeing in the workplace while at the same time enhancing your company branding; 
+                a people-centered working environment will position your organization as a pioneer in the industry as well as an employer of choice.</p>
+
+            <p>Through tailored workshops and individual support we aim to achieve the following for your organization:</p>
+
+                <p>Higher Productivity: Mentally and physically healthy employees have more levels of energy and focus. Less absenteeism and stress contribute to consistent productivity.</p>
+                
+                <p>Motivated Workforce: Keeping employees engaged in professional and personal development activities foster a sense of progress and achievement, enhancing job satisfaction and motivation.</p>
+                
+                <p>Integrated Workplace: Embedding wellness into the company culture shows a shared commitment to health and work-life balance, creating a supportive and unified work environment.</p>
+        </section>
+
     </main>
+
+    <a href="#top" class="scroll-to-top" id="scrollToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <div id="footer-container"></div>
 
@@ -62,5 +88,19 @@
             .catch(error => console.error('Error al cargar el footer:', error));
     </script>
 
+    <script>
+        // Mostrar o ocultar el botón al hacer scroll
+        window.addEventListener('scroll', function () {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 200) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+    </script>
+
 </body>
+
 </html>
