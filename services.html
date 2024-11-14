@@ -32,7 +32,7 @@
                             employer of choice.</p>
                     </div>
                 </a>
-                <a href="#wellbeing">
+                <a href="#sessions">
                     <div class="card">
                         <h2>Coaching Sessions</h2>
                         <div class="image-container">
@@ -43,7 +43,7 @@
                             voluptatem? Harum necessitatibus architecto veritatis nobis?</p>
                     </div>
                 </a>
-                <a href="#wellbeing">
+                <a href="#workshops">
                     <div class="card">
                         <h2>Customized Workshops</h2>
                         <div class="image-container">
@@ -123,18 +123,73 @@
             .catch(error => console.error('Error al cargar el footer:', error));
     </script>
 
-    <script>
-        // Mostrar o ocultar el botón al hacer scroll
-        window.addEventListener('scroll', function () {
-            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-            if (window.scrollY > 200) {
-                scrollToTopBtn.classList.add('show');
-            } else {
-                scrollToTopBtn.classList.remove('show');
+<script>
+    // Scroll suave para los enlaces de sección
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
         });
+    });
 
-    </script>
+    // Mostrar u ocultar el botón de "ir al principio"
+    window.addEventListener('scroll', function () {
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        if (window.scrollY > 200) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+
+    // Evento de clic para el botón "to top"
+    document.getElementById('scrollToTopBtn').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<script>
+    // Scroll suave para los enlaces de sección
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Mostrar u ocultar el botón de "ir al principio"
+    window.addEventListener('scroll', function () {
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        if (window.scrollY > 200) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+</script>
+
 
 </body>
 

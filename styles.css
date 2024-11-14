@@ -94,7 +94,7 @@ header {
 }
 
 .nav-list li a:hover {
-    /* background-color: var(--secondary-color); */
+    padding: 5px 20px;
     border-radius: 25px;
     border: var(--main-color) solid 1px;
 }
@@ -307,7 +307,6 @@ header {
 }
 
 .flipCardBack p {
-    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
     padding: 0 10px; /* Espacio para que el texto no quede pegado a los bordes */
@@ -579,7 +578,7 @@ header {
     justify-content: center;
     gap: 15px;
     margin: 40px 0;
-    flex-wrap: wrap; /* Permite ajuste en filas en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .service_cards a {
@@ -589,7 +588,7 @@ header {
 
 .card {
     max-width: 340px;
-    height: 520px;
+    height: 570px;
     background-color: #fff;
     border: var(--second-color) 1px solid;
     border-radius: 10px;
@@ -607,6 +606,10 @@ header {
     color: #000;
     text-align: center;
     margin-bottom: 45px;
+}
+
+.card p {
+    line-height: 1.5;
 }
 
 /* Contenedor de imagen dentro de la tarjeta */
