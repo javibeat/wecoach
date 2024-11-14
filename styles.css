@@ -1,6 +1,3 @@
-/* /Users/javibeat/Design/WEBS/WeCoach/styles.css */
-
-/* Configuración de fuentes */
 @font-face {
     font-family: 'BebasNeue';
     src: url('./fonts/BebasNeue-Regular.ttf') format('truetype');
@@ -22,7 +19,6 @@
     font-style: normal;
 }
 
-/* Variables de colores */
 :root {
     --primary-color: #000;
     --secondary-color: #f0f0f0;
@@ -30,7 +26,6 @@
     --second-color: #e41393;
 }
 
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -747,6 +742,10 @@ header {
         text-align: justify;
         margin: 0px 15px 15px;
     }
+}
+
+.benefits {
+    margin-top: 20px;
 }
 
 /* FOOTER */
