@@ -130,6 +130,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
     .logo .logo-desktop {
         display: none;
     }
@@ -187,7 +191,7 @@ header {
 }
 
 .menu-logo-img {
-    max-width: 230px;
+    width: 70%;
 }
 
 /* Mostrar el logo solo en el menú desplegable móvil */
