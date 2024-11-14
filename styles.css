@@ -568,6 +568,7 @@ header {
     max-width: 340px;
     height: 520px;
     background-color: #fff;
+    border: var(--second-color) 1px solid;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -621,6 +622,9 @@ header {
     margin-bottom: 25px;
     position: relative; /* Necesario para posicionar el pseudo-elemento */
     text-align: center; /* Centrar el h2 y la línea */
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 40px;
+    color: var(--main-color);
 }
 
 #wellbeing h2::after {
@@ -657,7 +661,7 @@ header {
 
 @media (max-width: 768px) {
     #wellbeing h2 {
-        font-size: medium;
+        font-size: 30px;
     }
 }
 
