@@ -633,6 +633,24 @@ header {
     margin: 10px auto 0; /* Espacio entre el texto y la línea */
 }
 
+.bullet-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 20px; /* Espacio para el punto */
+    margin-bottom: 10px;
+}
+
+.bullet-item::before {
+    content: "•"; /* Cambia este símbolo si deseas otro */
+    color: var(--main-color); /* Color del punto */
+    font-size: 20px; /* Tamaño del punto */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 @media (max-width: 768px) {
     #wellbeing h2 {
         font-size: medium;
