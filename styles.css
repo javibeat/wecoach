@@ -613,7 +613,6 @@ header {
 #wellbeing {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 50px auto;
     max-width: 1080px;
 }
@@ -631,6 +630,11 @@ header {
     height: 2px; /* Grosor de la línea */
     background-color: #000; /* Color de la línea, puedes ajustarlo */
     margin: 10px auto 0; /* Espacio entre el texto y la línea */
+}
+
+.br {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 .bullet-item {
@@ -654,6 +658,55 @@ header {
 @media (max-width: 768px) {
     #wellbeing h2 {
         font-size: medium;
+    }
+}
+
+/* Estilos para la sección de pilares */
+.pillars {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+    border: 1px solid var(--second-color);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
+
+.pillars h5 {
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 24px;
+    color: var(--main-color);
+    margin: 0;
+}
+
+.pillar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color); /* Fondo del círculo */
+    color: #fff; /* Color del icono */
+    border-radius: 50%;
+    font-size: 24px; /* Tamaño del icono */
+    flex-shrink: 0;
+}
+
+/* Espaciado extra para la versión móvil */
+@media (max-width: 768px) {
+    .pillars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pillar-icon {
+        margin: 15px auto 0;
+    }
+
+    .pillars p {
+        text-align: justify;
+        margin: 0px 15px 15px;
     }
 }
 
