@@ -179,6 +179,25 @@ header {
     }
 }
 
+/* Logo dentro del menú desplegable */
+.menu-logo {
+    display: none; /* Oculto por defecto */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-logo-img {
+    max-width: 230px;
+}
+
+/* Mostrar el logo solo en el menú desplegable móvil */
+@media (max-width: 768px) {
+    .menu-logo {
+        display: block; /* Muestra el logo en el menú desplegable */
+    }
+}
+
+
 /* Estilos para la sección de fundadores */
 .founders {
     display: flex;
