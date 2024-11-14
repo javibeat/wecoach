@@ -657,7 +657,7 @@ header {
 
 .br {
     margin-bottom: 15px;
-    text-align: left;
+    text-align: justify;
 }
 
 .bullet-item {
@@ -679,6 +679,11 @@ header {
 }
 
 @media (max-width: 768px) {
+    #wellbeing {
+        text-align: justify;
+        margin: auto 15px;
+    }
+
     #wellbeing h2 {
         font-size: 30px;
     }
