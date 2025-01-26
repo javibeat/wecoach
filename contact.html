@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Coach 360 - Contact Us</title>
+    <title>We Coach 360 - CONTACT</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
+
 </head>
+
 <body>
-    <header><div id="menu-container"></div></header>
+    <header>
+        <div id="menu-container"></div>
+    </header>
 
     <main>
-        CONTACT
+
+        <section class="wellbeing">
+            <h1>GET IN TOUCH</h1>
+            <div class="contact">
+                <div class="textContact">If you are looking to make meaningful changes 
+                    in your organization and are willing to empower your most powerful asset, 
+                    then get in touch with us and we will be happy to walk you through THRIVE360.</div>
+                <div class="formContact">
+                    <p>email</p>
+                    <p>whatsapp</p>
+                    <p>linkedin</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <a href="#top" class="scroll-to-top" id="scrollToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <div id="footer-container"></div>
 
@@ -29,43 +56,74 @@
             .catch(error => console.error('Error al cargar el footer:', error));
     </script>
 
-<script>
-    // Scroll suave para los enlaces de sección
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+    <script>
+        // Scroll suave para los enlaces de sección
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mostrar u ocultar el botón de "ir al principio"
+        window.addEventListener('scroll', function () {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 200) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
             }
         });
-    });
 
-    // Mostrar u ocultar el botón de "ir al principio"
-    window.addEventListener('scroll', function () {
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-        if (window.scrollY > 200) {
-            scrollToTopBtn.classList.add('show');
-        } else {
-            scrollToTopBtn.classList.remove('show');
-        }
-    });
-
-    // Evento de clic para el botón "to top"
-    document.getElementById('scrollToTopBtn').addEventListener('click', function (e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+        // Evento de clic para el botón "to top"
+        document.getElementById('scrollToTopBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
-</script>
-    
+    </script>
+
+    <script>
+        // Scroll suave para los enlaces de sección
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mostrar u ocultar el botón de "ir al principio"
+        window.addEventListener('scroll', function () {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 200) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+    </script>
+
+
 </body>
+
 </html>

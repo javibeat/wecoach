@@ -661,6 +661,56 @@ header {
     margin: 10px auto 0; /* Espacio entre el texto y la línea */
 }
 
+#sessions {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: 1080px;
+}
+
+#sessions h2 {
+    margin-bottom: 25px;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    text-align: center; /* Centrar el h2 y la línea */
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+#sessions h2::after {
+    content: "";
+    display: block;
+    width: 200px; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea, puedes ajustarlo */
+    margin: 10px auto 0; /* Espacio entre el texto y la línea */
+}
+
+#workshops {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: 1080px;
+}
+
+#workshops h2 {
+    margin-bottom: 25px;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    text-align: center; /* Centrar el h2 y la línea */
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+#workshops h2::after {
+    content: "";
+    display: block;
+    width: 200px; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea, puedes ajustarlo */
+    margin: 10px auto 0; /* Espacio entre el texto y la línea */
+}
+
 .br {
     margin-bottom: 15px;
     text-align: justify;
@@ -687,10 +737,28 @@ header {
 @media (max-width: 768px) {
     #wellbeing {
         text-align: justify;
-        margin: auto 15px;
+        margin: auto 15px 50px 15px;
     }
 
     #wellbeing h2 {
+        font-size: 30px;
+    }
+
+    #sessions {
+        text-align: justify;
+        margin: auto 15px 50px 15px;
+    }
+
+    #sessions h2 {
+        font-size: 30px;
+    }
+
+    #workshops {
+        text-align: justify;
+        margin: auto 15px 50px 15px;
+    }
+
+    #workshops h2 {
         font-size: 30px;
     }
 }
@@ -746,6 +814,51 @@ header {
 
 .benefits {
     margin-top: 20px;
+}
+
+/*CONTACT*/
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 1080px;
+    gap: 20px;
+}
+
+.textContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: beige;
+    text-align: justify;
+}
+
+.formContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: beige;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textContact {
+        width: 100%;
+    }
+
+    .formContact {
+        width: 100%;
+    }
 }
 
 /* FOOTER */
